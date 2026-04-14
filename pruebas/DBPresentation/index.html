@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con Bases de Datos | Presentación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">Bases de Datos</div>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div class="slide-counter"><span id="current-slide">1</span> / <span id="total-slides">10</span></div>
+        </header>
+
+        <main id="slider">
+            <!-- Slide 1: Inicio -->
+            <section class="slide active" id="slide-1">
+                <div class="content hero">
+                    <img src="assets/hero.png" alt="Database Hero" class="floating-img">
+                    <div class="text">
+                        <h1>Interacción con Bases de Datos</h1>
+                        <p class="subtitle">Usuarios y Administradores en el ecosistema de datos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2: Objetivo -->
+            <section class="slide" id="slide-2">
+                <div class="content center">
+                    <div class="icon-header">🎯</div>
+                    <h2>Objetivo Primario</h2>
+                    <p class="large-text">El núcleo de toda base de datos se resume en dos acciones fundamentales:</p>
+                    <div class="goal-cards">
+                        <div class="card">
+                            <span class="card-icon">👁️</span>
+                            <h3>Visualizar</h3>
+                            <p>Consultar la información guardada.</p>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon">💾</span>
+                            <h3>Guardar</h3>
+                            <p>Almacenar nueva información de forma estructurada.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Usuarios -->
+            <section class="slide" id="slide-3">
+                <div class="content grid-split">
+                    <div class="side-text">
+                        <span>Categoría 01</span>
+                        <h2>Tipos de Usuarios</h2>
+                        <p>Existen 4 tipos principales, definidos por la manera en la que interactúan con el sistema.</p>
+                    </div>
+                    <div class="visual-grid">
+                        <div class="mini-card" onclick="goToSlide(4)">Naive</div>
+                        <div class="mini-card" onclick="goToSlide(5)">Programadores</div>
+                        <div class="mini-card" onclick="goToSlide(6)">Sofisticados</div>
+                        <div class="mini-card" onclick="goToSlide(7)">Especializados</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: Naive -->
+            <section class="slide" id="slide-4">
+                <div class="content feature-split">
+                    <img src="assets/naive.png" alt="Naive User">
+                    <div class="feature-text">
+                        <h3>Usuarios Naive</h3>
+                        <p>Interactúan mediante programas o aplicaciones ya escritos.</p>
+                        <div class="example-box">
+                            <strong>Ejemplo:</strong> Empleado de banco que transfiere dinero invocando el programa "transferir".
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: Programadores -->
+            <section class="slide" id="slide-5">
+                <div class="content feature-split reverse">
+                    <img src="assets/programmer.png" alt="Programmer">
+                    <div class="feature-text">
+                        <h3>Programadores de Aplicación</h3>
+                        <p>Son las mentes creativas detrás del código. Se encargan de escribir las aplicaciones que otros utilizarán.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Sofisticados -->
+            <section class="slide" id="slide-6">
+                <div class="content feature-split">
+                    <img src="assets/sophisticated.png" alt="Sophisticated">
+                    <div class="feature-text">
+                        <h3>Usuarios Sofisticados</h3>
+                        <p>Interactúan sin escribir programas. Utilizan <strong>queries</strong> directas que envían a un procesador de consultas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7: Especializados -->
+            <section class="slide" id="slide-7">
+                <div class="content feature-split reverse">
+                    <img src="assets/specialized.png" alt="Specialized">
+                    <div class="feature-text">
+                        <h3>Usuarios Especializados</h3>
+                        <p>Desarrollan aplicaciones que van más allá del procesamiento de datos tradicional (Sistemas expertos, análisis complejos).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Administrador -->
+            <section class="slide" id="slide-8">
+                <div class="content center">
+                    <img src="assets/admin.png" alt="DBA" class="admin-hero">
+                    <h2>Database Administrator (DBA)</h2>
+                    <p>La persona con control total sobre los datos y los programas que acceden a ellos.</p>
+                </div>
+            </section>
+
+            <!-- Slide 9: Funciones DBA -->
+            <section class="slide" id="slide-9">
+                <div class="content">
+                    <h2>Funciones del DBA</h2>
+                    <div class="functions-grid">
+                        <div class="fn-card">
+                            <h4>Schema Definition</h4>
+                            <p>Crea los esquemas originales mediante statements.</p>
+                        </div>
+                        <div class="fn-card">
+                            <h4>Acceso y Almacenamiento</h4>
+                            <p>Define cómo se guardan y se acceden los datos.</p>
+                        </div>
+                        <div class="fn-card">
+                            <h4>Modificaciones</h4>
+                            <p>Realiza cambios físicos y de esquema según se requiera.</p>
+                        </div>
+                        <div class="fn-card">
+                            <h4>Autorización</h4>
+                            <p>Gestiona quién puede acceder a qué información.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 10: Mantenimiento -->
+            <section class="slide" id="slide-10">
+                <div class="content center">
+                    <div class="maint-icon">⚙️</div>
+                    <h2>Mantenimiento de Rutina</h2>
+                    <ul class="maint-list">
+                        <li>Backups periódicos</li>
+                        <li>Gestión de espacio disponible</li>
+                        <li>Monitoreo de procesos</li>
+                    </ul>
+                    <div class="conclusion">¡Gracias por su atención!</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="controls">
+                <button id="prevBtn" title="Anterior">←</button>
+                <div class="hint">Usa las flechas del teclado</div>
+                <button id="nextBtn" title="Siguiente">→</button>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

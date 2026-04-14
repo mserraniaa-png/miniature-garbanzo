@@ -1,8 +1,8 @@
 import pygame
 import sys
 import time
-from logic import Card, Deck, Hand, Player, Participant
-from assets import Assets, GREEN_TABLE, DARK_GREEN_TABLE, WHITE, GOLD, RED, GRAY, BLUE
+from Blackjack.logic import Card, Deck, Hand, Player, Participant
+from Blackjack.assets import Assets, GREEN_TABLE, DARK_GREEN_TABLE, WHITE, GOLD, RED, GRAY, BLUE
 
 # Configuración de pantalla
 WIDTH, HEIGHT = 1000, 700
