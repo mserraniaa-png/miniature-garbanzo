@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Manuel Serranía</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo">Manuel Serranía</a>
+      <nav class="nav-menu">
+        <a href="#portfolio" class="active">Portafolio</a>
+        <a href="#about">Sobre Mí</a>
+        <a href="#equipo">Mi Equipo</a>
+        <a href="#trajectory">Trayectoria</a>
+        <a href="#current">Ahora Mismo</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <a href="#contact" class="btn-primary">Reservar Sesión</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="hero-bg">
+      <img src="images/0N1A2671.JPG" alt="Hero background">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-lg">El Arte de la Luz y el Color.</h1>
+      <p class="headline-md" style="color: rgba(255,255,255,0.7); margin: 12px 0 8px;">Manuel Serranía</p>
+      <p class="body-lg hero-subtitle">Ingeniero, Fotógrafo &amp; Desarrollador</p>
+    </div>
+    <div class="scroll-indicator">
+      <span class="material-symbols-outlined">expand_more</span>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="main-wrapper">
+
+    <!-- About -->
+    <section class="section-block fade-in" id="about">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="images/0N1A3526.jpg" alt="Sobre mí">
+        </div>
+        <div class="about-text">
+          <h2 class="headline-lg">La Narrativa Visual</h2>
+          <div class="body-lg">
+            <p>Considero que la fotografía es una forma única de capturar un momento. Capturar la escencia y los sentimientos de la vida - no solo como es, si no como se siente la plenitud del momento.</p>
+            <p>Quiero capturar las cosas desde mi perspectiva, mi trabajo explora un espectro de estilos fotográficos: desde retratos hasta paisajes sutiles, desde arquitecturas limpias hasta sistemas robustos.</p>
+            <p class="about-quote">"Cada foto captura miles de detalles, cada uno único a su manera."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment -->
+    <section class="section-block fade-in" id="equipo">
+      <div class="equipment-header">
+        <h2 class="headline-lg">Mi Equipo</h2>
+      </div>
+      <div class="equipment-grid">
+        <div class="equipment-card">
+          <div class="equipment-image-wrap">
+            <img src="images/0N1A2444.jpg" alt="Foto tomada con Canon EOS R6" loading="lazy">
+          </div>
+          <div class="equipment-body">
+            <p class="label-caps">Profesional</p>
+            <h4 class="headline-sm">Canon EOS R6</h4>
+            <p class="body-md">Mi herramienta principal para sesiones, salidas y momentos. Un cuerpo sin espejo que combina velocidad, precisión y una calidad de imagen que captura cada matiz de luz y sombra. Confiable incluso en las condiciones más exigentes.</p>
+          </div>
+        </div>
+        <div class="equipment-card">
+          <div class="equipment-image-wrap">
+            <img src="images/IMG_6945.jpeg" alt="Foto tomada con cámara analógica 35mm" loading="lazy">
+          </div>
+          <div class="equipment-body">
+            <p class="label-caps">Analógica</p>
+            <h4 class="headline-sm">Cámara 35mm</h4>
+            <p class="body-md">La fotografía analógica es un arte distinto: cargar, encuadrar, disparar, esperar. Cada foto es una decisión consciente. El grano, la textura, la luz imperfecta — la fotografía en su estado más puro y honesto.</p>
+          </div>
+        </div>
+        <div class="equipment-card">
+          <div class="equipment-image-wrap">
+            <img src="images/IMG_0572.jpg" alt="Foto tomada con Canon PowerShot" loading="lazy">
+          </div>
+          <div class="equipment-body">
+            <p class="label-caps">Compacta</p>
+            <h4 class="headline-sm">Canon PowerShot</h4>
+            <p class="body-md">Una cámara que me llevo a momentos personales, pequeña ligera y espontánea para cualquier momento. Captura el momento de una forma diferente, con ese aire nostálgico que solo una compacta sabe regalar. Para fotografiar sin pensar, solo capturar la memoria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section-block fade-in" id="portfolio">
+      <div class="portfolio-header">
+        <h2 class="headline-lg">Trabajos Seleccionados</h2>
+        <div class="portfolio-filters">
+          <button class="active" data-filter="all">Todas</button>
+          <button data-filter="editorial">Editorial</button>
+          <button data-filter="paisaje">Paisaje</button>
+          <button data-filter="retrato">Retrato</button>
+        </div>
+      </div>
+      <div class="portfolio-grid">
+        <!-- Col 1 -->
+        <div class="portfolio-item" data-category="retrato" data-description="Un retrato que captura la esencia de una conexión única.">
+          <div class="image-wrap" data-speed="0.5">
+            <img src="images/0N1A0676.JPEG" alt="En otra vida" loading="lazy" style="aspect-ratio: 3317/5896;">
+          </div>
+          <p class="meta">Paisaje — 2025</p>
+          <h3>En otra vida</h3>
+        </div>
+        <div class="portfolio-item" data-category="paisaje" data-description="La magia del atardecer en Campeche, donde el sol baña todo con una luz cálida e irrepetible.">
+          <div class="image-wrap" data-speed="0.9">
+            <img src="images/0N1A9450.JPG" alt="La Hora Dorada" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Paisaje — 2025</p>
+          <h3>La Hora Dorada</h3>
+        </div>
+        <div class="portfolio-item" data-category="paisaje" data-description="El mar y el cielo se funden en un abrazo de colores al final del día.">
+          <div class="image-wrap" data-speed="0.4">
+            <img src="images/C5DFEBCB-4455-423D-B675-5D0EEC7B9C62.jpg" alt="Atardecer frente al mar" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Paisaje — 2025</p>
+          <h3>Atardecer frente al mar</h3>
+        </div>
+        <div class="portfolio-item" data-category="paisaje" data-description="Un perro con ojos de diferentes colores. Worales.">
+          <div class="image-wrap" data-speed="1.0">
+            <img src="images/0N1A0835.JPG" alt="Horizonte Abierto" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Retrato — 2024</p>
+          <h3>Perro</h3>
+        </div>
+        <!-- Col 2 -->
+        <div class="portfolio-item" data-category="paisaje" data-description="Muchas veces pasamos de largo las cosas pequeñas que ocurren alrededor de nosotros.">
+          <div class="image-wrap" data-speed="0.8">
+            <img src="images/0N1A8629.JPEG" alt="Naturaleza a detalle" loading="lazy" style="aspect-ratio: 2247/3995;">
+          </div>
+          <p class="meta">Paisaje — 2022</p>
+          <h3>Naturaleza a detalle</h3>
+        </div>
+        <div class="portfolio-item" data-category="paisaje" data-description="En la feria de Campeche, durante uno de sus atardeceres que tanto me gustaban.">
+          <div class="image-wrap" data-speed="0.5">
+            <img src="images/0N1A1099.JPEG" alt="Mirada Profunda" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Paisaje — 2025</p>
+          <h3>Rueda</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="Me gustan mucho estas flores.">
+          <div class="image-wrap" data-speed="0.8">
+            <img src="images/0N1A3017.JPG" alt="Composición Urbana" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Editorial — 2024</p>
+          <h3>Flores</h3>
+        </div>
+        <div class="portfolio-item" data-category="retrato" data-description="Sho.">
+          <div class="image-wrap" data-speed="0.9">
+            <img src="images/0N1A3192.JPEG" alt="Esencia" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Retrato — 2024</p>
+          <h3>Yo</h3>
+        </div>
+        <!-- Col 3 -->
+        <div class="portfolio-item" data-category="editorial" data-description="Luego me pregunto todas las historias que me podrían contar las personas.">
+          <div class="image-wrap" data-speed="0.7">
+            <img src="images/0N1A2507.JPEG" alt="Luces y Sombras" loading="lazy" style="aspect-ratio: 3123/4684;">
+          </div>
+          <p class="meta">Editorial — 2025</p>
+          <h3>Años de atardeceres</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="Se compran colchones.">
+          <div class="image-wrap" data-speed="0.5">
+            <img src="images/0N1A3518.JPG" alt="Reflejos" loading="lazy" style="aspect-ratio: 2/3;">
+          </div>
+          <p class="meta">Editorial — 2025</p>
+          <h3>Se compran</h3>
+        </div>
+        <div class="portfolio-item" data-category="retrato" data-description="A veces mi cámara no quiere enfocar, pero aún así me gusta como salen las fotos.">
+          <div class="image-wrap" data-speed="0.7">
+            <img src="images/0N1A3598.JPEG" alt="Detalles" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Retrato — 2026</p>
+          <h3>Desenfocado</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="Adentro del Palacio de Bellas Artes. Un edificio único con una arquitectura fascinante.">
+          <div class="image-wrap" data-speed="0.6">
+            <img src="images/0N1A9085.JPG" alt="Líneas del Horizonte" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Editorial — 2024</p>
+          <h3>Esquinas</h3>
+        </div>
+        <!-- Col 4 -->
+        <div class="portfolio-item" data-category="editorial" data-description="No me gusta mucho salir en la CDMX, pero tengo que admitir que tiene vistas muy bonitas.">
+          <div class="image-wrap" data-speed="0.6">
+            <img src="images/1C980679-C13F-47ED-BC10-F33F98A4D428.jpg" alt="Sombras y Siluetas" loading="lazy" style="aspect-ratio: 3071/4096;">
+          </div>
+          <p class="meta">Editorial — 2023</p>
+          <h3>Sombras y Siluetas</h3>
+        </div>
+        <div class="portfolio-item" data-category="retrato" data-description="Considero que compartir un atardecer es un momento especial con otra persona.">
+          <div class="image-wrap" data-speed="0.7">
+            <img src="images/285C19BC-82EA-4913-8557-388E7A6FBE79.jpg" alt="Atardecer compartido" loading="lazy" style="aspect-ratio: 3276/4096;">
+          </div>
+          <p class="meta">Editorial — 2025</p>
+          <h3>Atardecer compartido</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="Un edificio que sobresale en el horizonte.">
+          <div class="image-wrap" data-speed="1.1">
+            <img src="images/0N1A9459.JPG" alt="Última Luz" loading="lazy" style="aspect-ratio: 2/3;">
+          </div>
+          <p class="meta">Editorial — 2025</p>
+          <h3>Horizonte</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="Océano en calma al atardecer.">
+          <div class="image-wrap" data-speed="0.7">
+            <img src="images/0N1A2444.JPG" alt="Precisión Natural" loading="lazy" style="aspect-ratio: 3/2;">
+          </div>
+          <p class="meta">Editorial — 2025</p>
+          <h3>Calma</h3>
+        </div>
+        <!-- Col 5 -->
+        <div class="portfolio-item" data-category="editorial" data-description="Un momento.">
+          <div class="image-wrap" data-speed="0.8">
+            <img src="images/EAB12858-2A23-4928-919C-448E390671E0.jpg" alt="Introspección" loading="lazy" style="aspect-ratio: 3072/4096;">
+          </div>
+          <p class="meta">Editorial — 2025</p>
+          <h3>Introspección</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="Capturado en Fuji 200.">
+          <div class="image-wrap" data-speed="0.4">
+            <img src="images/30b75b04-e565-4b1f-bb3f-f6a199c68618.JPEG" alt="Memorias" loading="lazy" style="aspect-ratio: 1600/1460;">
+          </div>
+          <p class="meta">Editorial — 2024</p>
+          <h3>Memorias</h3>
+        </div>
+        <div class="portfolio-item" data-category="editorial" data-description="El tiempo se detiene en un solo fotograma, preservando memorias que perdurarán para siempre.">
+          <div class="image-wrap" data-speed="0.9">
+            <img src="images/Photo09_5.jpg" alt="Perspectiva" loading="lazy" style="aspect-ratio: 3792/2546;">
+          </div>
+          <p class="meta">Editorial — 2024</p>
+          <h3>Memorias</h3>
+        </div>
+        <div class="portfolio-item" data-category="retrato" data-description="Al infinito y más allá.">
+          <div class="image-wrap" data-speed="0.5">
+            <img src="images/IMG_0973.JPG" alt="Autenticidad" loading="lazy" style="aspect-ratio: 2/3;">
+          </div>
+          <p class="meta">Retrato — 2023</p>
+          <h3>Pájaros Lunares</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-container">
+        <button class="lightbox-close material-symbols-outlined" aria-label="Cerrar">close</button>
+        <div class="lightbox-layout">
+          <div class="lightbox-image-area">
+            <img id="lightbox-img" src="" alt="">
+          </div>
+          <div class="lightbox-info">
+            <span class="lightbox-meta" id="lightbox-meta"></span>
+            <h2 class="lightbox-title" id="lightbox-title"></h2>
+            <p class="lightbox-desc" id="lightbox-desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trajectory -->
+    <section class="section-block fade-in" id="trajectory">
+      <h2 class="headline-lg" style="text-align: center; margin-bottom: 80px;">Trayectoria</h2>
+      <div class="trajectory-list">
+        <div class="trajectory-item">
+          <span class="trajectory-date">2025 - Presente</span>
+          <div class="trajectory-body">
+            <h4 class="headline-sm">Becario de sistemas &amp; Maestría en Tecnologías de la Información e Inteligencia Analítica</h4>
+            <p class="body-md">Universidad Anáhuac.</p>
+          </div>
+        </div>
+        <div class="trajectory-item">
+          <span class="trajectory-date">2024 — 2025</span>
+          <div class="trajectory-body">
+            <h4 class="headline-sm">Supervisor interno</h4>
+            <p class="body-md">Proyecto DRT Campeche. Análisis RAMS documental, análisis de datos de operación.</p>
+          </div>
+        </div>
+        <div class="trajectory-item">
+          <span class="trajectory-date">2023</span>
+          <div class="trajectory-body">
+            <h4 class="headline-sm">UAB Exchange Program</h4>
+            <p class="body-md">Universitat Autònoma de Barcelona. Especialidad en Inteligencia Artificial e intercambiadores de calor</p>
+          </div>
+        </div>
+        <div class="trajectory-item">
+          <span class="trajectory-date">2022-2023</span>
+          <div class="trajectory-body">
+            <h4 class="headline-sm">Amazon Web Services</h4>
+            <p class="body-md">Customer Service Associate</p>
+          </div>
+        </div>
+        <div class="trajectory-item">
+          <span class="trajectory-date">2019 — 2023</span>
+          <div class="trajectory-body">
+            <h4 class="headline-sm">Ingeniería Mecánica</h4>
+            <p class="body-md">Universidad Autónoma Metropolitana.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section-block fade-in" id="skills">
+      <h2 class="headline-lg" style="margin-bottom: 48px;">Habilidades</h2>
+      <div class="skills-fluid-container">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Área Técnica</h3>
+          <div class="tags-container">
+            <span class="tag">HTML5 / CSS3 Moderno</span>
+            <span class="tag">JavaScript Vanilla</span>
+            <span class="tag">PHP</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Modelado Estadístico SAS</span>
+            <span class="tag">Python / Web Scraping</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Gestión y Metodologías</h3>
+          <div class="tags-container">
+            <span class="tag">Arquitectura de Software</span>
+            <span class="tag">Metodologías Ágiles</span>
+            <span class="tag">Análisis de Requerimientos</span>
+            <span class="tag">Prompt, context &amp; harness engineering</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Intereses Co-curriculares</h3>
+          <div class="tags-container">
+            <span class="tag">Escritura Creativa</span>
+            <span class="tag">Fotografía de Moda en Blanco y Negro</span>
+            <span class="tag">Inteligencia Artificial Aplicada</span>
+            <span class="tag">Filosofía &amp; Psicología</span>
+            <span class="tag">Psicología</span>
+            <span class="tag">Pedagogía</span> 
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Habilidades Creativas</h3>
+          <div class="tags-container">
+            <span class="tag">Fotografía de Retrato / Editorial</span>
+            <span class="tag">Edición Digital (Lightroom / Photoshop)</span>
+            <span class="tag">Composición Visual y Teoría del Color</span>
+            <span class="tag">Dirección de Sesiones Fotográficas</span>
+            <span class="tag">Diseño Gráfico y Branding</span>
+            <span class="tag">Storytelling Visual</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current / Ahora Mismo -->
+    <section class="section-block fade-in" id="current">
+      <div class="current-header">
+        <h2 class="headline-lg">Ahora Mismo</h2>
+        <span class="current-update">Actualizado Junio 2026</span>
+      </div>
+      <div class="current-grid">
+        <div class="current-card">
+          <p class="label-caps">Leyendo</p>
+          <h4 class="headline-sm">"Guerra y Paz"</h4>
+          <p class="body-md">Leo Tolstoy — Voy en la página 100 de 1200.</p>
+        </div>
+        <div class="current-card">
+          <p class="label-caps">Escuchando</p>
+          <h4 class="headline-sm">Michael Jackson</h4>
+          <p class="body-md">Nada más por la película.</p>
+        </div>
+        <div class="current-card">
+          <p class="label-caps">Viciándome</p>
+          <h4 class="headline-sm">Subnautica 2</h4>
+          <p class="body-md">Me da miedo el océano.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-block fade-in" id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="headline-lg">Conversemos</h2>
+          <p class="body-lg">Estoy aceptando proyectos selectos de fotografía y desarrollo para 2026. Comparte tu visión o simplemente saluda.</p>
+          <a href="mailto:mserrania@anahuac.mx" class="contact-email">mserrania@anahuac.mx</a>
+          <div class="contact-socials">
+            <a href="https://github.com/mserraniaa-png" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/manuel-alejandro-serran%C3%ADa-reinada-24311730b/" target="_blank" rel="noopener noreferrer"">LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <p class="body-lg" style="margin-bottom: 32px; color: var(--secondary);">
+            Escríbeme directamente a mi correo y te responderé a la brevedad.
+          </p>
+          <a href="mailto:mserrania@anahuac.mx?subject=Contacto%20desde%20Portafolio" class="form-submit" style="text-align: center; display: block; text-decoration: none;">
+            Enviar Correo →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="main-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Manuel Serranía</a>
+          <p class="body-md">Capturando momentos personales para mí y otras personas.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navega</h5>
+          <a href="#portfolio">Portafolio</a>
+          <a href="#about">Sobre Mí</a>
+          <a href="#equipo">Mi Equipo</a>
+          <a href="#trajectory">Trayectoria</a>
+          <a href="#current">Ahora Mismo</a>
+        </div>
+        <div class="footer-col">
+          <h5>Social</h5>
+          <a href="https://github.com/mserraniaa-png" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/manuel-alejandro-serran%C3%ADa-reinada-24311730b/" target="_blank" rel="noopener noreferrer"">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-copyright">© 2026 Manuel Serranía. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
